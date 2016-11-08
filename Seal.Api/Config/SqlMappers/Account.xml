@@ -1,0 +1,67 @@
+﻿<sqlMap namespace="NgAccount" xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <alias>
+    <typeAlias alias="Account" type="Seal.Models.Account,Seal.Models"/>
+    <typeAlias alias="Account1" type="Seal.Models.Account,Seal.Models"/>
+    <typeAlias alias="AccountLog" type="Seal.Models.AccountLog,Seal.Models"/>
+  </alias>
+  <statements>
+    <select id="GetAccountByLoginName"   resultClass="Account1" parameterClass="HashTable">
+    </select>
+
+    <select id="QueryLogByLoginName"   resultClass="AccountLog" parameterClass="HashTable">
+      SELECT TOP 1 *
+      FROM    t_Education_Backstage_AccountLog WHERE LoginName=#loginName#
+    </select>
+
+    <select id="GetAccountByPhone"   resultClass="Account" parameterClass="HashTable">
+      SELECT TOP 1 *
+      FROM    t_Education_Backstage_LoginNews WHERE Phone=#phone#
+    </select>
+
+    
+
+    <insert id="CreateLog"   parameterClass="HashTable">
+      INSERT INTO [t_Education_Backstage_AccountLog]
+      ([TerminalType]
+      ,[LoginName]
+      ,[SessionKey]
+      ,[CreateTime]
+      ,[Address]
+      ,[ActionName])
+      VALUES
+      (#TerminalType#
+      ,#LoginName#
+      ,#SessionKey#
+      ,#CreateTime#
+      ,#Address#
+      ,#ActionName#)
+    </insert>
+
+    <update id="UpdateAccount" parameterClass="Account">
+      UPDATE [t_Education_Backstage_LoginNews]
+      SET [Phone] =  #Phone#
+      ,[PassWord] =  #PassWord#
+      ,[Level] =  #Level#
+      WHERE [Name]=#Name#
+    </update>
+
+
+    <insert id="CreateAccount"   parameterClass="Account">
+      INSERT INTO [t_Education_Backstage_LoginNews]
+      ([LID]
+      ,[Name]
+      ,[Phone]
+      ,[PassWord]
+      ,[Level]
+      ,[CreateDate])
+      VALUES
+      (#LID#
+      ,#Name#
+      ,#Phone#
+      ,#PassWord#
+      ,#Level#
+      ,#CreateDate#)
+    </insert>
+
+  </statements>
+</sqlMap>

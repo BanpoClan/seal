@@ -1,0 +1,14 @@
+drop table if exists t_Education_Backstage_BusinessStatus;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_BusinessStatus                                      */
+/*==============================================================*/
+create table t_Education_Backstage_BusinessStatus
+(
+   BSID                 varchar(36) not null,
+   BIID                 varchar(36),
+   salesman             varchar(64),
+   validity             date,
+   remark               varchar(128),
+   primary key (BSID)
+);

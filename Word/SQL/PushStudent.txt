@@ -1,0 +1,16 @@
+drop table if exists t_Education_Backstage_PushStudent;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_PushStudent                                    */
+/*==============================================================*/
+create table t_Education_Backstage_PushStudent
+(
+   ID                   varchar(36) not null,
+   BIID                 varchar(36),
+   Name                 varchar(128),
+   Phone                varchar(34),
+   Rarmk                varchar(4000),
+   IsContact            bool,
+   ContactDate          date,
+   primary key (ID)
+);

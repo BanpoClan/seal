@@ -1,0 +1,15 @@
+drop table if exists t_Education_Backstage_TableReputation;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_TableReputation                                      */
+/*==============================================================*/
+create table t_Education_Backstage_TableReputation
+(
+   ID                   varchar(36) not null,
+   PID                  varchar(36),
+   Type                 varchar(128),
+   Reputationvalue      varchar(128),
+   Favoritevalue        varchar(128),
+   Remark               varchar(4000),
+   primary key (ID)
+);

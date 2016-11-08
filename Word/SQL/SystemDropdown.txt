@@ -1,0 +1,13 @@
+drop table if exists t_Education_Backstage_SystemDropdown;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_SystemDropdown                                          */
+/*==============================================================*/
+create table t_Education_Backstage_SystemDropdown
+(
+   ID                   varchar(36) not null,
+   Name                 varchar(128),
+   Type                 varchar(128),
+   OrderIndex           int,
+   primary key (ID)
+);

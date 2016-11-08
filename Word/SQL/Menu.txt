@@ -1,0 +1,14 @@
+drop table if exists t_Education_Backstage_MenuManagement;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_MenuManagement                                         */
+/*==============================================================*/
+create table t_Education_Backstage_MenuManagement
+(
+   BMID                 varchar(36) not null,
+   BIID                 varchar(36),
+   Type                 varchar(34),
+   PBMID                varchar(36),
+   Name                 varchar(128),
+   primary key (BMID)
+);

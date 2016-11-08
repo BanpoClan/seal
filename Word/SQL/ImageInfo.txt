@@ -1,0 +1,15 @@
+drop table if exists t_Education_Backstage_ImageInfo;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_ImageInfo                                   */
+/*==============================================================*/
+create table t_Education_Backstage_ImageInfo
+(
+   ID                   varchar(36) not null,
+   BMID                 varchar(36),
+   Name                 varchar(128),
+   ImgPath              varchar(128),
+   Position             varchar(128),
+   Remark               varchar(4000),
+   primary key (ID)
+);

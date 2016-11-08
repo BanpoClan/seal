@@ -1,0 +1,14 @@
+drop table if exists t_Education_Backstage_CoursePhotos;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_CoursePhotos                                          */
+/*==============================================================*/
+create table t_Education_Backstage_CoursePhotos
+(
+   ID                   varchar(36) not null,
+   CIID                 varchar(36),
+   Name                 varchar(128),
+   Path                 varchar(128),
+   Rarmk                varchar(2000),
+   primary key (ID)
+);

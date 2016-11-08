@@ -1,0 +1,15 @@
+drop table if exists t_Education_Backstage_TrialLesson;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_TrialLesson                                        */
+/*==============================================================*/
+create table t_Education_Backstage_TrialLesson
+(
+   ID                   varchar(36) not null,
+   UIID                 varchar(36),
+   CIID                 varchar(36),
+   IsOK                 bool,
+   Rarmk                varchar(4000),
+   score                float,
+   primary key (ID)
+);

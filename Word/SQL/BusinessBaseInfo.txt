@@ -1,0 +1,31 @@
+drop table if exists t_Education_Backstage_BusinessBaseInfo;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_BusinessBaseInfo                                      */
+/*==============================================================*/
+create table t_Education_Backstage_BusinessBaseInfo
+(
+   BIID                 varchar(36) not null,
+   LID                  varchar(36),
+   Logo                 varchar(128),
+   Comment              varchar(4000),
+   BusinessLicense      varchar(128),
+   company              varchar(128),
+   typeofenterprise     national char(1),
+   Registeredaddress    national char(1),
+   RegisteredCapital    float,
+   OperatingPeriodStartDate datetime,
+   OperatingPeriodEndDate datetime,
+   DateOfEstablishment  datetime,
+   RegistrationAuthority datetime,
+   BusinessScopeBusinessScope national varchar(4000),
+   InspectionTime       datetime,
+   RegistrationNumber   national varchar(128),
+   LegalRepresentative  national varchar(128),
+   Industrywide         national char(1),
+   SchoolName           national varchar(200),
+   address              national char(1),
+   AuditMark            bool,
+   primary key (BIID)
+);
+

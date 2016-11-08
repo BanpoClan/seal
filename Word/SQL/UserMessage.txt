@@ -1,0 +1,12 @@
+drop table if exists t_Education_Backstage_UserMessage;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_UserMessage                                            */
+/*==============================================================*/
+create table t_Education_Backstage_UserMessage
+(
+   UIID                 varchar(36) not null,
+   LID                  varchar(36),
+   Sex                  bool,
+   primary key (UIID)
+);

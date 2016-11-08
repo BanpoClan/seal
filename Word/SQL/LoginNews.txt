@@ -1,0 +1,15 @@
+drop table if exists t_Education_Backstage_LoginNews;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_LoginNews    */
+/*==============================================================*/
+create table t_Education_Backstage_LoginNews
+(
+   LID                  varchar(36) not null,
+   Name                 varchar(128),
+   Phone                varchar(34),
+   PassWord             varchar(34),
+   Level                int,
+   CreateDate           date,
+   primary key (LID)
+);

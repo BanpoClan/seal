@@ -1,0 +1,12 @@
+drop table if exists t_Education_Backstage_UserFavorites;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_UserFavorites                                      */
+/*==============================================================*/
+create table t_Education_Backstage_UserFavorites
+(
+   ID                   varchar(36),
+   UIID                 varchar(36),
+   Type                 varchar(34),
+   CollectionID         varchar(36)
+);

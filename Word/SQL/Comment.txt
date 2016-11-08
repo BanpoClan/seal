@@ -1,0 +1,20 @@
+drop table if exists t_Education_Backstage_Comment;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_Comment                                    */
+/*==============================================================*/
+create table t_Education_Backstage_Comment
+(
+   ID                   varchar(36) not null,
+   BIID                 varchar(36),
+   CommentsID           varchar(36),
+   Askedpeople          national char(1),
+   Askedcontent         longtext,
+   AskedTime            datetime,
+   Replypeople          national char(1),
+   ReplyTime            datetime,
+   Replycontent         datetime,
+   score                float,
+   DisplayNumber        varchar(36),
+   primary key (ID)
+);

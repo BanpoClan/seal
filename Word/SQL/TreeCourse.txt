@@ -1,0 +1,13 @@
+drop table if exists t_Education_Backstage_TreeCourse;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_TreeCourse                                           */
+/*==============================================================*/
+create table t_Education_Backstage_TreeCourse
+(
+   CMID                 varchar(36) not null,
+   Type                 varchar(34),
+   PCMID                varchar(36),
+   Name                 varchar(128),
+   primary key (CMID)
+);

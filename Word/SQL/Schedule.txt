@@ -1,0 +1,23 @@
+drop table if exists t_Education_Backstage_Schedule;
+
+/*==============================================================*/
+/* Table: t_Education_Backstage_Schedule                                        */
+/*==============================================================*/
+create table t_Education_Backstage_Schedule
+(
+   CIID                 varchar(36) not null,
+   CMID                 varchar(36),
+   BIID                 varchar(36),
+   Cou_CIID             varchar(36),
+   Img                  varchar(128),
+   Name                 varchar(256),
+   Teachers             varchar(2000),
+   Introduce            varchar(4000),
+   TeacherTime          varchar(256),
+   CourseTime           varchar(256),
+   CourseCost           float,
+   Keywords             varchar(2000),
+   IsAudition           bool,
+   CreateDate           date,
+   primary key (CIID)
+);
