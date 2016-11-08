@@ -16,7 +16,7 @@ namespace Seal.Common
         public ExceptionBase(string message)
             : base(message)
         {
-           // hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+           // hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh99999999999999999999999999999
         }
     }
 }
